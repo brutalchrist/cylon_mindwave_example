@@ -1,0 +1,32 @@
+{
+  "name": "cylon_mindwave_example",
+  "version": "1.0.0",
+  "description": "Example Cylonjs + OpenCV + Mindwave NeuroSky + Arduino",
+  "main": "Robot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brutalchrist/cylon_mindwave_example.git"
+  },
+  "keywords": [
+    "CylonJS",
+    "OpenCV",
+    "Mindwave",
+    "NeuroSky",
+    "Arduino"
+  ],
+  "author": "Sebastián González",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brutalchrist/cylon_mindwave_example/issues"
+  },
+  "homepage": "https://github.com/brutalchrist/cylon_mindwave_example#readme",
+  "dependencies": {
+    "cylon": "1.3.0",
+    "cylon-firmata": "0.24.0",
+    "cylon-neurosky": "0.14.0",
+    "python-shell": "0.4.0"
+  }
+}
