@@ -3,22 +3,7 @@ var Cylon = require('cylon');
 
 var ATTENTION_NUMBERS = 3;
 
-var mapping_devices = 
-  {
-    666: {
-      name: 'relay_1',
-      action: function(device) {
-        device.toggle();
-      }
-    },
-    755: {
-      name: 'relay_2',
-      action: function(device) {
-        device.toggle();
-      }
-    }
-  }
-;
+var mapping_devices = require('./arduino_devices.js');
 
 Cylon.robot({
   connections: {
@@ -87,7 +72,6 @@ Cylon.robot({
     // my.headset.on("meditation", function(data) {
     //   meditation_data = data;
     // });
-    
 
     pyshell.on('message', function (message) {
       console.log(message);
