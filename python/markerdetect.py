@@ -6,9 +6,12 @@ import sys
 from ar_markers.hamming.detect import detect_markers
 
 if __name__ == '__main__':
+    debug = False
+    if "-d" in sys.argv:
+        debug = True
 
     # for line in sys.stdin:
-    capture = cv2.VideoCapture(1)
+    capture = cv2.VideoCapture(0)
 
     if capture.isOpened():
         frame_captured, frame = capture.read()
@@ -20,8 +23,10 @@ if __name__ == '__main__':
             marker.highlite_marker(frame)
             print marker.id
             sys.stdout.flush()
-            #exit()
-        # cv2.imshow('Test Frame', frame)
+            
+        if debug:
+            cv2.imshow('Test Frame', frame)
+
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
         frame_captured, frame = capture.read()
