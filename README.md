@@ -107,3 +107,5 @@ $ yarn install
 ```bash
 $ node Robot.js
 ```
+
+![Light](https://media.giphy.com/media/l1KVbVolyj8ptkn0k/giphy.gif)
